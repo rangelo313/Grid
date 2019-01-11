@@ -326,17 +326,6 @@ bool Grid::Move(int s)
 			{
 				if (grid[moverrowindex][movercolumnindex] == '0' || grid[moverrowindex][movercolumnindex] == '@')
 					grid[moverrowindex][movercolumnindex] = '0';
-			/*else
-				{
-					//grid[moverrowindex - i][movercolumnindex - i] = '.';
-					
-					for (int i = 0; i < rows; i++)
-						for (int j = 0; j < columns; j++)
-						{
-							if (grid[i][j] == ' ')
-								grid[i][j] = '.';
-						} 
-				} */
 			}
 			if (direction == SOUTH || mover == 'v')
 			{
@@ -509,11 +498,6 @@ void Grid::Grow(int gr, int gc)
 		rows = 40;
 		columns = 40;
 	}
-	
-
-
-
-
 }
 
 
